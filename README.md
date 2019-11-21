@@ -1,9 +1,6 @@
 # offline Icons Reference
 Offline Icons Reference/Documentation
 
-
-[![Total Downloads](https://poser.pugx.org/lexxyungcarter/offline-icons-reference/downloads)](https://packagist.org/packages/lexxyungcarter/offline-icons-reference) [![Latest Stable Version](https://poser.pugx.org/lexxyungcarter/offline-icons-reference/v/stable)](https://packagist.org/packages/lexxyungcarter/offline-icons-reference) [![Latest Unstable Version](https://poser.pugx.org/lexxyungcarter/offline-icons-reference/v/unstable)](//packagist.org/packages/lexxyungcarter/offline-icons-reference) [![License](https://poser.pugx.org/lexxyungcarter/offline-icons-reference/license)](https://packagist.org/packages/lexxyungcarter/offline-icons-reference)
-
 <a href="https://patreon.com/lexxyungcarter"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Patreon donate button" /> </a>
 
 ## Features
@@ -22,15 +19,26 @@ This funding is used for maintaining the project and adding new features into Co
 ## So, Where's the Demo?
 The project will be launched soon
 
-![Screenshot](examples/acelords-messenger.jpg?raw=true "Screenshot")
+![Screenshot](screenshot1?raw=true "Screenshot 1")
+
+![Screenshot](screenshot2?raw=true "Screenshot 2")
+
+![Screenshot](screenshot3?raw=true "Screenshot 3")
+
+![Screenshot](screenshot4?raw=true "Screenshot 4")
 
 
 ## Installation
-- Clone the repo and simple, start using it offline, forever! (Which, from my studies, is a heck of a long time)
+- Clone the repo and simply start using it offline - FOREVER! (Which, from my studies, is heck of a long time)
 
 ```bash
+# ssh
 git clone git@github.com:lexxyungcarter/offline-icons-reference.git
+
+# https
+git clone https://github.com/lexxyungcarter/offline-icons-reference.git
 ``` 
+
 ### Tips
 If using [Laravel Valet](https://laravel.com/valet), you can follow these steps:
 - create an 'offline' folder in your development space
