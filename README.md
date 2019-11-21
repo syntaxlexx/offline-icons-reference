@@ -5,8 +5,8 @@ Or even better, the online docs have terrible copy-paste functionality that is j
 
 Well, here it is! You have it now! Runs completely offline, uses [Vue](https://vuejs.org) so you can add your fonts later, and it's portable! Works anywhere!
 
-### Why this project? The actual way it happened...
-Maze leo (Thursday 21 Nov, 2019) nimeamka kusaka font flani, nikaboeka mbaya! Finding it online consumed bundles, copy-pasting was shit.... Imebidi niunde my own offline library 😅 ambayo itawork hadi kwa simu kama PWA(coming soon)
+### Why this project? What actually transpired...
+Maze leo (Thursday 21 Nov, 2019) si nimeamka kusaka font flani, nikaboeka mbaya! Finding it online consumed bundles, copy-pasting was shit.... Imebidi niunde my own offline library 😅 ambayo itawork hadi kwa simu kama PWA(coming soon). Staki ujinga!
 
 <a href="https://patreon.com/lexxyungcarter"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Patreon donate button" /> </a>
 
