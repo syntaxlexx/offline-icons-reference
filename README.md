@@ -1,5 +1,9 @@
-# offline Icons Reference
-Offline Icons Reference/Documentation
+# Offline Icons Reference
+Do you have times you wish to find an icon superfast? And works completely offline? A project you can always rely upon in your development machine when you are at your granny's house with no wifi? Or simply you hate looking for that icon online? 
+
+Or even better, the online docs have terrible copy-paste functionality that is just missing...that something! That UI/UX!
+
+Well, here it is! You have it now! Runs completely offline, uses [Vue](https://vuejs.org) so you can add your fonts later, and it's portable! Works anywhere!
 
 <a href="https://patreon.com/lexxyungcarter"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Patreon donate button" /> </a>
 
