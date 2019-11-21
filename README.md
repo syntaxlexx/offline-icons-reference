@@ -1,5 +1,5 @@
 # Offline Icons Reference
-Do you have times you wish to find an icon superfast? And works completely offline? A project you can always rely upon in your development machine when you are at your granny's house with no wifi? Or simply you hate looking for that icon online? 
+Do you have times you wish to find an icon superfast? And works completely offline? A project you can always rely upon in your development machine when you are at your granny's house with no WI-FI? Or simply you hate looking for that icon online? 
 
 Or even better, the online docs have terrible copy-paste functionality that is just missing...that something! That UI/UX!
 
@@ -21,7 +21,8 @@ This funding is used for maintaining the project and adding new features into Co
 
 
 ## So, Where's the Demo?
-The project will be launched soon
+[DEMO - https://icons.acelords.space](https://icons.acelords.space).
+You can also bookmark the link if you feel like ;-)
 
 ![Screenshot](screenshot1?raw=true "Screenshot 1")
 
