@@ -27,15 +27,15 @@ This funding is used for maintaining the project and adding new features into Co
 [DEMO - https://icons.acelords.space](https://icons.acelords.space).
 You can also bookmark the link if you feel like ;-)
 
-![Screenshot](screenshot6?raw=true "Screenshot 6")
+![Screenshot](screenshot6.jpg?raw=true "Screenshot 6")
 
-![Screenshot](screenshot2?raw=true "Screenshot 2")
+![Screenshot](screenshot2.jpg?raw=true "Screenshot 2")
 
-![Screenshot](screenshot3?raw=true "Screenshot 3")
+![Screenshot](screenshot3.jpg?raw=true "Screenshot 3")
 
-![Screenshot](screenshot4?raw=true "Screenshot 4")
+![Screenshot](screenshot4.jpg?raw=true "Screenshot 4")
 
-![Screenshot](screenshot7?raw=true "Screenshot 7")
+![Screenshot](screenshot7.jpg?raw=true "Screenshot 7")
 
 
 ## Installation
