@@ -76,6 +76,58 @@
         .name {
             margin-left: 10px;
         }
+        p.extras {
+            margin-top: -0.5rem;
+        }
+        div.examples {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0.5rem 1.25rem;
+        }
+
+        div.examples > div {
+            display: flex;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        div.examples > div > div:first-child {
+            display: flex;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.4);
+            background: #FFF;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.examples > div > div:first-child + div {
+            display: flex;
+            margin-left: -0.25rem;
+            padding: 0.5rem 0.75rem 0.5rem 1rem;
+            background: #222;
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+
+        div.examples > div > div:first-child + div > code {
+            color: #FFF;
+            align-self: center;
+            background-color: #030303;
+        }
+
+        div.examples > div > div.dark:first-child {
+            background: #444;
+        }
+
+        div.examples i {
+            display: flex;
+        }
+
+        div.examples-size > div > div:first-child {
+            min-width: 3rem;
+        }
     
     </style>
 </head>
@@ -154,6 +206,205 @@
                         <div v-for="(item, i) in list" :key="i">
                             <div v-html="item.html" @click="copyToClipboard(item)"></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2 class="extras">Extras</h2>
+
+            <p class="extras">The helper CSS classes are listed below.</p>
+
+            <section>
+                <h3>Size</h3>
+
+                <div class="examples examples-size">
+                    <div @click="copyToClipboardSingle('mdi-18px')">
+                        <div>
+                            <i class="mdi mdi-18px mdi-account"></i>
+                        </div>
+                        <div>
+                            <code>mdi-18px</code>
+                        </div>
+                    </div>
+                    <div @click="copyToClipboardSingle('mdi-24px')">
+                        <div>
+                            <i class="mdi mdi-24px mdi-account"></i>
+                        </div>
+                        <div>
+                            <code>mdi-24px</code>
+                        </div>
+                    </div>
+                    <div @click="copyToClipboardSingle('mdi-36px')">
+                        <div>
+                            <i class="mdi mdi-36px mdi-account"></i>
+                        </div>
+                        <div>
+                            <code>mdi-36px</code>
+                        </div>
+                    </div>
+                    <div @click="copyToClipboardSingle('mdi-48px')">
+                        <div>
+                            <i class="mdi mdi-48px mdi-account"></i>
+                        </div>
+                        <div>
+                            <code>mdi-48px</code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h3>Rotate</h3>
+
+            <div class="examples">
+                <div>
+                    <div>
+                        <i class="mdi mdi-36px mdi-account"></i>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-45')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-45 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-45</code> 
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-90')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-90 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-90</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-135')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-135 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-135</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-180')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-180 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-180</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-225')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-225 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-225</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-270')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-270 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-270</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-rotate-315')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-rotate-315 mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-rotate-315</code> 
+                    </div>
+                </div>
+            </div>
+
+            <h3>Flip</h3>
+
+            <div class="examples">
+                <div>
+                    <div>
+                        <i class="mdi mdi-36px mdi-account-alert"></i>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-flip-h')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-flip-h mdi-account-alert"></i>
+                    </div>
+                    <div>
+                        <code>mdi-flip-h</code> 
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-flip-v')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-flip-v mdi-account-alert"></i>
+                    </div>
+                    <div>
+                        <code>mdi-flip-v</code> 
+                    </div>
+                </div>
+            </div>
+
+            <p class="note"><strong>Note:</strong> We do not include the ability to use <code>mdi-flip-*</code> and
+                <code>mdi-rotate-*</code> at the same time.</p>
+
+            <h3>Spin</h3>
+
+            <div class="examples">
+                <div @click="copyToClipboardSingle('mdi-spin')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-spin mdi-loading"></i>
+                    </div>
+                    <div>
+                        <code>mdi-spin</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-spin')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-spin mdi-star"></i>
+                    </div>
+                    <div>
+                        <code>mdi-spin</code>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Color</h3>
+
+            <div class="examples">
+                <div @click="copyToClipboardSingle('mdi-light')">
+                    <div class="dark">
+                        <i class="mdi mdi-36px mdi-light mdi-account dark-demo"></i>
+                    </div>
+                    <div>
+                        <code>mdi-light</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-light mdi-inactive')">
+                    <div class="dark">
+                        <i class="mdi mdi-36px mdi-light mdi-inactive mdi-account dark-demo"></i>
+                    </div>
+                    <div>
+                        <code>mdi-light mdi-inactive</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-dark')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-dark mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-dark</code>
+                    </div>
+                </div>
+                <div @click="copyToClipboardSingle('mdi-dark mdi-inactive')">
+                    <div>
+                        <i class="mdi mdi-36px mdi-dark mdi-inactive mdi-account"></i>
+                    </div>
+                    <div>
+                        <code>mdi-dark mdi-inactive</code> 
                     </div>
                 </div>
             </div>

@@ -166,6 +166,15 @@ const iconsMixin = {
             })
         },
 
+        copyToClipboardSingle(icon) {
+            let item = {
+                icon: icon,
+                hex: icon,
+            }
+
+            this.copyToClipboard(item)
+        },
+
     },
 
     mounted() {
