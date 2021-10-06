@@ -21,6 +21,7 @@ const iconsMixin = {
                     {text: 'Copy Icon Class', value: 'icon-class'},
                     {text: 'Copy Icon HTML', value: 'icon-html'},
                     {text: 'Copy Icon HEX', value: 'icon-hex'},
+                    {text: 'Copy camelCase', value: 'icon-camelCase'},
                 ],
                 toastr: {
                     escapeHtml: true,
@@ -122,6 +123,10 @@ const iconsMixin = {
             // override in component
             return icon;
         },
+        
+        getIconCamelCase(icon) {
+            return icon.replace(/-./g, x=>x.toUpperCase()[1])
+        },
 
         generateTemplate(icon) {
             // override in component
@@ -135,6 +140,7 @@ const iconsMixin = {
                 hex: item.hasOwnProperty('hex') ? item.hex : null,
                 category: item.hasOwnProperty('category') ? item.category : null,
                 version: item.hasOwnProperty('version') ? item.version : null,
+                deprecated: item.hasOwnProperty('deprecated') ? item.deprecated : null,
             }
         },
 
@@ -153,6 +159,9 @@ const iconsMixin = {
                     break;
                 case 'icon-hex':
                     message = item.hex;
+                    break;
+                case 'icon-camelCase':
+                    message = this.getIconCamelCase(item.icon)
                     break;
                 default:
                     break;

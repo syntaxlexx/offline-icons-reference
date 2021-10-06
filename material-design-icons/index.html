@@ -70,6 +70,18 @@
             color: #925e00;
         }
 
+        .fa-hover.is-deprecated a {
+            border: 1px solid red;
+        }
+
+        .fa-hover.is-deprecated a:hover {
+            background: red;
+        }
+        
+        .fa-hover.is-deprecated a:hover .hex {
+            color: #925e00;
+        }
+
         .jumbotron h1 {
             text-shadow: 4px 3px 0 #2196F3, 9px 8px 0 rgba(0,0,0,0.15);
         }
@@ -160,15 +172,15 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <section id="search">
-                                <label for="search-input"><i class="mdi mdi-magnify" aria-hidden="true"></i><span
-                                        class="sr-only">Search
-                                        icons</span></label>
+                                <label for="search-input">
+                                    <i class="mdi mdi-magnify" aria-hidden="true"></i>
+                                    <span class="sr-only">Search icons</span>
+                                </label>
                                 <input id="search-input" class="form-control input-lg" placeholder="Search icons"
                                     autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1"
-                                    v-model="search">
-                                <a id="search-clear" href="https://fontawesome.com/v4.7.0/icons/#"
-                                    class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear
-                                        search</span>
+                                    v-model="search" />
+                                <a id="search-clear" href="https://fontawesome.com/v4.7.0/icons/#" class="fa fa-times-circle hide" aria-hidden="true">
+                                    <span class="sr-only">Clear search</span>
                                 </a>
                             </section>
                         </div>
@@ -178,7 +190,8 @@
                                 v-for="button in preferences.copyButtons"
                                 :key="button.value"
                                 :class="[ isButtonActive(button.value) ? 'btn-primary' : 'btn-link' ]"
-                                @click="toggleCopyPreference(button.value)">
+                                @click="toggleCopyPreference(button.value)"
+                            >
                                 {{ button.text }}
                             </button>
                         </div>
@@ -196,6 +209,14 @@
                         </div>
 
                         <div v-for="(item, j) in newIcons" :key="`${randomString(2)}-${j}`">
+                            <div v-html="item.html" @click="copyToClipboard(item)"></div>
+                        </div>
+                        
+                        <div class="col-md-12 col-sm-12">
+                            <h4>Deprecated Icons</h4>
+                        </div>
+
+                        <div v-for="(item, j) in deprecatedIcons" :key="`${randomString(2)}-${j}`">
                             <div v-html="item.html" @click="copyToClipboard(item)"></div>
                         </div>
                         
@@ -441,7 +462,13 @@
             
             data() {
                 return {
-                    //
+                    deprecatedIcons: [],
+                }
+            },
+
+            watch: {
+                list(val) {
+                    this.generateDeprecatedIconsList()
                 }
             },
 
@@ -451,14 +478,25 @@
                         return this.isNew(item)
                     })
                 },
+                
+                generateDeprecatedIconsList() {
+                    this.deprecatedIcons = _.filter(this.list, item => {
+                        return this.isDeprecated(item)
+                    })
+                },
 
                 isNew(icon) {
                     return icon.version == this.version
+                },
+                
+                isDeprecated(icon) {
+                    return !!icon.deprecated
                 },
 
                 generateTemplate(icon) {
                     let classes = 'fa-hover col-md-3 col-sm-4'
                     this.isNew(icon) ? classes += ' is-new ' : ''
+                    this.isDeprecated(icon) ? classes += ' is-deprecated ' : ''
 
                     let str = `<div class="${classes}">`
                     str += `<a href="#${icon.name}">`
