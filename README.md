@@ -18,13 +18,13 @@ Maze leo (Thursday 21 Nov, 2019) si nimeamka kusaka font flani, nikaboeka mbaya!
 - Future support for a PWA
 
 ## Crowdfunding
-It's also possible to support the project on [Patreon](https://www.patreon.com/lexxyungcarter) or by buying products and merchandise at [Marketplace](https://marketplace.acelords.space).
+It's also possible to support the project on [Patreon](https://www.patreon.com/lexxyungcarter) or by buying products and merchandise at [Marketplace](https://store.acelords.com).
 
 This funding is used for maintaining the project and adding new features into Code Style plus other open-source repositories.
 
 
 ## So, Where's the Demo?
-[DEMO - https://icons.acelords.space](https://icons.acelords.space).
+[DEMO - https://icons.acelords.com](https://icons.acelords.com).
 You can also bookmark the link if you feel like ;-)
 
 ![Screenshot](screenshot6.jpg?raw=true "Screenshot 6")
